@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <link rel="icon" href="contact.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    .whole {
+      position: sticky;
+      top: 0;
+      width: 100%;
+    }
+    .border {
+      border: 10px solid black;
+    }
+    .head {
+      color: white;
+      background-color: rgb(128, 170, 255);
+      border: 2px solid black;
+      padding: 20px;
+    }
+    .head h1 {
+      padding: 15px;
+    }
+    .head img {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      border: 3px solid black;
+      background-color: white;
+      padding: 3px;
+      margin-left: 5%;
+      box-shadow: 1px 2px 126px -7px rgba(0, 0, 0, 0.67);
+      -webkit-box-shadow: 1px 2px 126px -7px rgba(0, 0, 0, 0.67);
+      -moz-box-shadow: 1px 2px 126px -7px rgba(0, 0, 0, 0.67);
+    }
+    .body1 {
+      background-color: rgb(128, 170, 255);
+      color: white;
+    }
+    .headinside {
+      border: 2px solid black;
+    }
+
+    .head h2 {
+      padding-left: 15%;
+      font-family: "lucida handwriting", cursive;
+    }
+    .head2 {
+      background-color: rgb(179, 209, 255);
+      color: white;
+      padding: 20px;
+    }
+    .head2 a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      padding: 15px;
+      margin-left: 10%;
+      border-radius: 10px;
+      font-weight: 600;
+      font-family: "helvatica", sans-serif;
+    }
+    .head2 a:hover {
+      color: black;
+      background-color: white;
+      transition: 0.5s;
+    }
+    #inpage {
+      color: black;
+      background-color: white;
+    }
+
+    .head i {
+      display: none;
+    }
+    .hidden_menu {
+      display: none;
+    }
+    .body {
+      background-image: url("contact.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center;
+      width: 100%;
+      height: 500px;
+    }
+    @media screen and (max-width: 995px) {
+      .head2 a {
+        margin-left: 8%;
+      }
+    }
+    .inside ul li a:hover {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 885px) {
+      .head2 {
+        display: none;
+      }
+
+      .head i {
+        display: inline-block;
+        margin-left: 90%;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .hidden_menu {
+        display: none;
+        position: absolute;
+        margin-left: 60%;
+        height: 250%;
+        width: 40%;
+        padding-top: 75px;
+        padding-bottom: 40%;
+        background-color: black;
+        opacity: 80%;
+        transition: 0.5s;
+      }
+
+      .hidden_menu ul {
+        margin-left: 0;
+        padding-left: 0px;
+      }
+      .hidden_menu ul a li {
+        display: block;
+        width: 100%;
+        padding: 10px;
+      }
+      .hidden_menu ul a li:hover {
+        background-color: white;
+        color: #000000;
+      }
+      .hidden_menu ul a {
+        text-decoration: none;
+        min-width: 100%;
+        padding-left: 10px;
+        font-family: "helvatica", sans-serif;
+      }
+      .li_div {
+        min-width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #menu.active {
+        display: block;
+      }
+      .hidden_menu button {
+        position: absolute;
+      }
+      .inside ul li a {
+        font-size: 18px;
+      }
+      .inside ul li a:hover {
+        font-size: 18px;
+      }
+    }
+    .inside {
+      border: 2px solid black;
+      padding-left: 10%;
+      box-shadow: 10px 10px 83px 4px rgba(0, 0, 0, 0.33);
+      -webkit-box-shadow: 10px 10px 83px 4px rgba(0, 0, 0, 0.33);
+      -moz-box-shadow: 10px 10px 83px 4px rgba(0, 0, 0, 0.33);
+    }
+    .inside ul {
+      margin-right: 20%;
+      list-style: armenian;
+    }
+    .inside ul li {
+      padding: 20px;
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-family: "helvatica", sans-serif;
+    }
+    #inside_ul {
+      list-style: disc;
+    }
+    #inside_ul li {
+      padding-bottom: 0px;
+    }
+    .inside h1 {
+      font-family: "lucida handwriting", cursive;
+      padding: 10px;
+      padding-top: 20px;
+    }
+    #icon.rotate {
+      rotate: 90deg;
+    }
+    .inside ul li a {
+      text-decoration: none;
+      color: black;
+      padding-left: 10px;
+    }
+
+    .inside ul li a i {
+      padding-right: 10px;
+    }
+    .inside ul li a img {
+      height: 30px;
+      width: 40px;
+      padding-right: 10px;
+    }
+    .inside ul li a img:hover {
+      height: 35px;
+      width: 45px;
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid whole">
+      <div class="row">
+        <div class="col-lg-12 head">
+          <img src="profile.jpeg" alt="me" />
+          <h2>Manikandan Tharun</h2>
+          <i
+            class="fa fa-bars"
+            aria-hidden="true"
+            id="icon"
+            onclick="show()"
+          ></i>
+        </div>
+        <div class="col-lg-12 head2">
+          <a href="index.html">SKILLS</a>
+          <a href="education.html">EDUCATION</a>
+          <a href="project.html">PROJECTS</a>
+          <a href="contact.html" id="inpage">CONTACT ME</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="hidden_menu" id="menu">
+          <div class="li_div">
+            <ul>
+              <a href="index.html"><li>SKILLS</li></a>
+              <a href="education.html"><li>EDUCATION</li></a>
+              <a href="project.html"><li>PROJECTS</li></a>
+              <a href="contact.html"><li id="inpage">CONTACT ME</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid body">
+      <div class="container inside">
+        <h1>Contact Me:</h1>
+        <ul>
+          <li>
+            <a
+              href="https://instagram.com/tharun_rocks_2005?igshid=Y2N2MXo1eWg0MHg0"
+              ><i class="fa fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/"
+              ><i class="fa fa-whatsapp"></i>Whatsapp (+91 9514426346)</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.com/"
+              ><img src="discord.png" />Discord (manikandantharun_74461)</a
+            >
+          </li>
+          <li>
+            <a href="https://mail.google.com/"
+              ><i class="fa fa-envelope-o"></i
+              >manikandan.p2023@vitstudent.ac.in</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function show() {
+        document.getElementById("menu").classList.toggle("active");
+        document.getElementById("icon").classList.toggle("rotate");
+      }
+    </script>
+  </body>
+</html>
